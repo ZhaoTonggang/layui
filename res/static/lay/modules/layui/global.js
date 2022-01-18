@@ -145,8 +145,8 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
       ,'<option value="modules/util.html">util 工具集</option>'
       ,'<option value="modules/code.html">code 代码文本行修饰</option>'
 
-      ,'<option value="/layui/www.layui.com/layim/index.html">layim</option>'
-      ,'<option value="/layui/www.layui.com/layuiadmin/index.html">layuiadmin</option>'
+      ,'<option value="../layim/">layim</option>'
+      ,'<option value="../layuiadmin/">layuiadmin</option>'
     ,'</select>'
     ,'<i class="layui-icon layui-icon-search"></i>'].join(''));
 
@@ -156,7 +156,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
     //搜索组件
     form.on('select(component)', function(data){
       var value = data.value;
-      location.href = /^\//.test(value) ? value : (layui.cache.dir + '../../../www.layui.com/doc/'+ value);
+      location.href = /^\//.test(value) ? value : (layui.cache.dir + '../../../doc/'+ value);
     });
   }();
 
@@ -479,7 +479,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
 
         layer.confirm([
           '<div class="layui-text" style="padding: 10px 0;">'
-          ,'请先阅读《<a href="/www.layui.com/about/disclaimer.html" target="_blank">layui 开源界面框架免责声明</a>》'
+          ,'请先阅读《<a href="./about/disclaimer.html" target="_blank">layui 开源界面框架免责声明</a>》'
           ,'，再进行下载</div>'
         ].join(''), {
           title: '下载提示'
