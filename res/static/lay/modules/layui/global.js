@@ -479,7 +479,7 @@ layui.define(['code', 'element', 'table', 'util', 'carousel', 'laytpl'], functio
 
         layer.confirm([
           '<div class="layui-text" style="padding: 10px 0;">'
-          ,'请先阅读《<a href="/www.layui.com/about/disclaimer.html" target="_blank">layui 开源界面框架免责声明</a>》'
+          ,'请先阅读《<a href="./about/disclaimer.html" target="_blank">layui 开源界面框架免责声明</a>》'
           ,'，再进行下载</div>'
         ].join(''), {
           title: '下载提示'
